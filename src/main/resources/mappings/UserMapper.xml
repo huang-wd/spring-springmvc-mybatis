@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huangwd.sample.dao.UserDao">
+    <sql id="dataColumns">
+        a.id AS "id",
+        a.name AS "name",
+        a.password AS "password"
+    </sql>
+
+    <select id="findAllList" resultType="com.huangwd.sample.entity.User">
+        SELECT
+        <include refid="dataColumns"/>
+        FROM user a
+    </select>
+
+</mapper>
