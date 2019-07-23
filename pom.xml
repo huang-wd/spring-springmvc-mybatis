@@ -8,7 +8,7 @@
     <version>1.0.0</version>
     <packaging>war</packaging>
 
-    <name>Spring-SpringMVC-Mybatis</name>
+    <name>spring-springmvc-mybatis</name>
 
     <inceptionYear>2017</inceptionYear>
 
